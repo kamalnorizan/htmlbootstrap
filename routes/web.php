@@ -10,6 +10,10 @@ Route::get('/grid', function () {
     return view('grid');
 })->name('grid');
 
+Route::get('/flex', function () {
+    return view('flex');
+})->name('flex');
+
 Route::get('/quotations', function () {
     return view('quotations');
 });
