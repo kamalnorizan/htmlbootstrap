@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/quotations', function () {
@@ -17,3 +17,7 @@ Route::get('/responsive', function () {
 Route::get('/responsiveLayout', function () {
     return view('responsiveLayout');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
