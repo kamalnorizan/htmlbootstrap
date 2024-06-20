@@ -57,8 +57,13 @@
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                 <li class="nav-item ">
-                    <a class="nav-link menu-link active" href="{{ route('index') }}">
+                    <a class="nav-link menu-link {{ Route::is('index') ? 'active' : '' }}" href="{{ route('index') }}">
                         <i class="ri-honour-line"></i> <span data-key="t-home">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link menu-link {{ Route::is('grid') ? 'active' : '' }}" href="{{ route('grid') }}">
+                        <i class="ri-grid-fill"></i> <span data-key="t-grid">Grid</span>
                     </a>
                 </li>
                 {{-- <li class="nav-item">
