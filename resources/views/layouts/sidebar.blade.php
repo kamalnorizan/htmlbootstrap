@@ -56,12 +56,12 @@
             </div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('index') }}">
-                        <i class="ri-honour-line"></i> <span data-key="t-widgets">Home</span>
+                <li class="nav-item ">
+                    <a class="nav-link menu-link active" href="{{ route('index') }}">
+                        <i class="ri-honour-line"></i> <span data-key="t-home">Home</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboards</span>
                     </a>
@@ -90,7 +90,7 @@
                             </li>
                         </ul>
                     </div>
-                </li> <!-- end Dashboard Menu -->
+                </li> <!-- end Dashboard Menu --> --}}
             </ul>
         </div>
         <!-- Sidebar -->
