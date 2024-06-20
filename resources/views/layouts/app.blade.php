@@ -21,6 +21,7 @@
     <!-- custom Css-->
     <link href="{{ asset('assets/css/custom.min.css') }}" rel="stylesheet" type="text/css" />
 
+    @yield('head')
 </head>
 
 <body>
@@ -956,6 +957,7 @@
                         </div>
                     </div>
                     <!-- end page title -->
+                    @yield('content')
 
                 </div>
                 <!-- container-fluid -->
@@ -990,6 +992,9 @@
     <script src="{{ asset('assets/js/pages/plugins/lord-icon-2.1.0.js') }}"></script>
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
+
+    @yield('script')
+
 </body>
 
 </html>

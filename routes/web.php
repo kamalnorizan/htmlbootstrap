@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/grid', function () {
+    return view('grid');
+})->name('grid');
+
 Route::get('/quotations', function () {
     return view('quotations');
 });
