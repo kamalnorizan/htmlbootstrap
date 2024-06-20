@@ -105,6 +105,25 @@
         </div>
     </div>
 
+    <div class="row gx-5 gy-3">
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-success">Col</div>
+        <div class="col bg-info">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-success">Col</div>
+        <div class="col bg-info">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-success">Col</div>
+        <div class="col bg-info">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-warning">Col</div>
+        <div class="col bg-success">Col</div>
+        <div class="col bg-info">Col</div>
+        <div class="col bg-warning">Col</div>
+    </div>
+
     <div class="row row-cols-md-2">
         <div class="col">
             <div class="card">
@@ -114,7 +133,6 @@
                     <p class="card-text">Text</p>
                 </div>
             </div>
-
         </div>
         <div class="col">
             <div class="card">
