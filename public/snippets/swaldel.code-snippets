@@ -1,0 +1,43 @@
+{
+	"Delete Swal": {
+		"prefix": "swaldel",
+		"body": [
+		  "swal({",
+		  "    title: \"Are you sure?\",",
+		  "    text: \"You will not be able to recover this demand point again!\",",
+		  "    icon: \"warning\",",
+		  "    buttons: {cancel: {",
+		  "        text: \"Cancel\",",
+		  "        value: null,",
+		  "        visible: true,",
+		  "        className: \"\",",
+		  "        closeModal: true,",
+		  "    },",
+		  "    confirm: {",
+		  "        text: \"Yes, i'm sure!\",",
+		  "        value: true,",
+		  "        visible: true,",
+		  "        className: \"btn-danger\",",
+		  "        closeModal: true",
+		  "    }}",
+		  "}).then((value)=>{",
+		  "    // alert(value);",
+		  "    if(value==true){",
+		  "        $.ajax({",
+		  "            type: \"post\",",
+		  "            url: \"${1:route}\",",
+		  "            data: {",
+		  "                _token: '{{csrf_token()}}',",
+		  "                ${2:fields}",
+		  "            },",
+		  "            dataType: \"json\",",
+		  "            success: function (response) {",
+		  "                swal(\"Deleted!\", \"The demand point file has been deleted successfully.\", \"success\");",
+		  "            }",
+		  "        });",
+		  "    }",
+		  "});"
+		],
+		"description": "Delete Swal"
+	  }
+}

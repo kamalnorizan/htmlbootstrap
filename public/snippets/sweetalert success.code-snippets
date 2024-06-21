@@ -1,0 +1,20 @@
+{
+	"Success Swal": {
+		"prefix": "swaSuccess",
+		"body": [
+		  "swal(\"${1:Ketetapan acara telah berjaya ditambah}\",{",
+		  "    icon:'success',",
+		  "    buttons: {",
+		  "        cancel: {",
+		  "            text: \"OK\",",
+		  "            value: null,",
+		  "            visible: true,",
+		  "            className: \"\",",
+		  "            closeModal: true,",
+		  "        }",
+		  "    }",
+		  "});"
+		],
+		"description": "Success Swal"
+	  }
+}

@@ -17,20 +17,20 @@
             <div class="card">
                 <div class="card-header">Form Control</div>
                 <div class="card-body">
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col">
                             <input type="text" name="" class="form-control" placeholder="Nama" id="">
                         </div>
                         <div class="col">
                             <input type="text" name="" class="form-control" placeholder="Email" id="">
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="card">
                 <div class="card-header">Form With Label</div>
                 <div class="card-body">
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>
@@ -59,7 +59,7 @@
                                 />
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="row form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         <label for="name" class="col-sm-3 control-label">Nama</label>
@@ -87,6 +87,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <button id="btnSubmit" type="button" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,7 +98,37 @@
 @endsection
 
 @section('script')
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
+
+    $('#btnSubmit').click(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "{{ route('form.store') }}",
+            data: {
+                _token: '{{ csrf_token() }}',
+                name: $('#name').val(),
+                email: $('#email').val(),
+                phoneNumber: $('#phoneNumber').val()
+            },
+            dataType: "json",
+            success: function (response) {
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                // console.log(xhr.responseJSON);
+                var errors = xhr.responseJSON.errors;
+                console.log(errors);
+                $.each(errors, function (indexInArray, error) {
+                    $('#'+indexInArray).addClass('is-invalid');
+                    $('#'+indexInArray).parent().find('.text-danger').text(error[0]);
+                });
+            }
+        });
+    });
 
 </script>
 @endsection

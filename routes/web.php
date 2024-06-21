@@ -1,6 +1,8 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function () {
     return view('index');
@@ -17,6 +19,19 @@ Route::get('/flex', function () {
 Route::get('/table', function () {
     return view('table');
 })->name('table');
+
+Route::post('/formstore', function (Request $request) {
+    $request->validate([
+        'name' => 'required',
+        'email' => 'required|email',
+        'phoneNumber' => 'required',
+    ],[
+        'name.required' => 'Sila masukkan nama anda',
+        'email.required' => 'Sila masukkan email anda',
+        'email.email' => 'Sila masukkan email yang betul',
+        'phoneNumber.required' => 'Sila masukkan nombor telefon anda',
+    ]);
+})->name('form.store');
 
 Route::get('/form', function () {
     return view('form');

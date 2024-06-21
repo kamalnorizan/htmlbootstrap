@@ -1,0 +1,45 @@
+{
+	"Sweet Alert 2": {
+		"prefix": "sw-$",
+		"body": [
+		  "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js\" integrity=\"sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>"
+		],
+		"description": "Sweet Alert 2"
+	  },
+
+	  "Sweet Alert 2 - Simple": {
+		"prefix": "sw-simple",
+		"body": [
+		  "swal(\"${1:message}\");"
+		],
+		"description": "Sweet Alert 2 - Simple"
+	  },
+
+	  "Sweet Alert 2 - with title": {
+		"prefix": "sw-simple-title",
+		"body": [
+		  "swal(\"${1:title}\", \"${2:message}\");"
+		],
+		"description": "Sweet Alert 2 - Simple"
+	  },
+
+	  "Sweet Alert 2 - Success": {
+		"prefix": "sw-success",
+		"body": [
+		  "swal(\"${1:title}\", \"${2:message}\", \"success\");"
+		],
+		"description": "Sweet Alert 2 - Success"
+	  },
+	  
+	  "Sweet Alert 2 - Icons": {
+		"prefix": "sw-icons-o",
+		"body": [
+		  "swal({",
+		  "  title: \"${1:Title}\",",
+		  "  text: \"${2:Message}\",",
+		  "  icon: \"${3|success,warning,error,info|}\",",
+		  "});"
+		],
+		"description": "Sweet Alert 2 - Icons"
+	  }
+}
