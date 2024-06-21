@@ -17,47 +17,49 @@
             <div class="card">
                 <div class="card-header">Sub Title</div>
                 <div class="card-body">
-                    <table class="table table-sm table-success table-striped table-hover table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Test Header</th>
-                                <th>Test Header</th>
-                                <th>Test Header</th>
-                                <th>Test Header</th>
-                                <th>Test Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                            </tr>
-                            <tr>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                            </tr>
-                            <tr>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                            </tr>
-                            <tr>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                                <td>Test content</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive-lg">
+                        <table class="table table-success table-striped table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Test Header</th>
+                                    <th>Test Header</th>
+                                    <th>Test Header</th>
+                                    <th>Test Header</th>
+                                    <th>Test Header</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                </tr>
+                                <tr>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo placeat est qui ducimus molestias repellendus nesciunt assumenda corrupti. Sit mollitia dolorum eaque ipsum inventore fugiat saepe eveniet dolores quaerat harum.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
