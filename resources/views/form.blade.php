@@ -61,7 +61,33 @@
                         </div>
                     </div>
 
-                    bf-tex
+                    <div class="row form-group {{ $errors->has('name') ? 'has-error' : '' }}">
+                        <label for="name" class="col-sm-3 control-label">Nama</label>
+                        <div class="col-sm-9">
+                            <input type="text" id="name" value="{{ old('name') }}" name="name" class="form-control" required="required" placeholder="Sila isi nama penuh anda">
+                            <small class="text-danger">{{ $errors->first('name') }}</small>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <div class="row form-group {{ $errors->has('email') ? ' has-error' : '' }}">
+                                <label for="email" class="col-sm-3 control-label">Email address</label>
+                                <div class="col-sm-9">
+                                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" required placeholder="eg: foo@bar.com">
+                                <small class="text-danger">{{ $errors->first('email') }}</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row form-group {{ $errors->has('phoneNumber') ? 'has-error' : '' }}">
+                                <label for="phoneNumber" class="col-sm-3 control-label">No Telefon</label>
+                                <div class="col-sm-9">
+                                    <input type="text" id="phoneNumber" value="{{ old('phoneNumber') }}" name="phoneNumber" class="form-control" required="required" placeholder="">
+                                    <small class="text-danger">{{ $errors->first('phoneNumber') }}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
