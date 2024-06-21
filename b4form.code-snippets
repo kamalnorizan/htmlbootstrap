@@ -1,0 +1,372 @@
+{
+	"bf-button": {
+		"prefix": "bf-button",
+		"body": [
+			"<button type="submit" class="btn btn-info pull-right">${1:Button name}</button>"
+		],
+		"description": "bf-button"
+	},
+	"Bootstrap 4 Checkbox": {
+		"prefix": "bf-checkbox",
+		"body": [
+			"<div class=\"form-group\">",
+			"    <div class=\"form-check {{ \\$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}\">",
+			"        <input class=\"form-check-input\" type=\"checkbox\" id=\"${1:checkbox_id}\" name=\"${1:checkbox_id}\" value=\"${2:1}\" ${3:checked}>",
+			"        <label class=\"form-check-label\" for=\"${1:checkbox_id}\">${4:Checkbox label}</label>",
+			"    </div>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:checkbox_id}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Checkbox"
+	},
+	"Bootstrap 4 Checkbox Horizontal": {
+		"prefix": "bf-checkboxh",
+		"body": [
+			"<div class=\"row form-group\">",
+			"    <div class=\"${6:col-sm-offset-3 col-sm-9}\">",
+			"        <div class=\"form-check {{ \\$errors->has('${1:checkbox_id}') ? ' has-error' : '' }}\">",
+			"            <input class=\"form-check-input\" type=\"checkbox\" name=\"${1:checkbox_id}\" id=\"${1:checkbox_id}\" value=\"${2:1}\" ${3:checked}>",
+			"            <label class=\"form-check-label\" for=\"${1:checkbox_id}\">${4:Checkbox label}</label>",
+			"        </div>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:checkbox_id}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Checkbox Horizontal"
+	},
+	"Bootstrap 4 Date Input": {
+		"prefix": "bf-date",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:date}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:date}\">${2:Input label}</label>",
+			"    <input type=\"date\" id=\"${1:date}\" name=\"${1:date}\" class=\"form-control\" ${4:required}>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:date}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Date Input"
+	},
+	"Bootstrap 4 Date Input Horizontal": {
+		"prefix": "bf-dateh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:date}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:date}\" class=\"${3:col-sm-3 control-label}\">${2:Input label}</label>",
+			"    <div class=\"${4:col-sm-9}\">",
+			"        <input type=\"date\" id=\"${1:date}\" name=\"${1:date}\" class=\"form-control\" ${6:required}>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:date}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Date Input Horizontal"
+	},
+	"Bootstrap 4 Email Input": {
+		"prefix": "bf-email",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:email}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:email}\">${2:Email address}</label>",
+			"    <input type=\"email\" id=\"${1:email}\" name=\"${1:email}\"  value=\"{{ old('${1:email}') }}\" class=\"form-control\" ${4:required} placeholder=\"${5:eg: foo@bar.com}\">",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:email}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Email Input"
+	},
+	"Bootstrap 4 Email Input Horizontal": {
+		"prefix": "bf-emailh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:email}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:email}\" class=\"${3:col-sm-3 control-label}\">${2:Email address}</label>",
+			"    <div class=\"${4:col-sm-9}\">",
+			"        <input type=\"email\" id=\"${1:email}\" name=\"${1:email}\" value=\"{{ old('${1:email}') }}\" class=\"form-control\" ${6:required} placeholder=\"${7:eg: foo@bar.com}\">",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:email}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Email Input Horizontal"
+	},
+	"Bootstrap 4 File Input": {
+		"prefix": "bf-file",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:photo}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:photo}\">${2:File label}</label>",
+			"    <input type=\"file\" id=\"${1:photo}\" name=\"${1:photo}\" class=\"form-control-file\" ${3:required}>",
+			"    <p class=\"help-block\">${5:Help text here}</p>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:photo}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 File Input"
+	},
+	"Bootstrap 4 File Input Horizontal": {
+		"prefix": "bf-fileh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:inputname}') ? ' has-error' : '' }}\">",
+			"    <label for=\"${1:photo}\" class=\"${6:col-sm-3 control-label}\">${2:File label}</label>",
+			"    <div class=\"${7:col-sm-9}\">",
+			"        <input type=\"file\" id=\"${1:photo}\" name=\"${1:photo}\" class=\"form-control-file\" ${3:required}>",
+			"        <p class=\"help-block\">${5:Help text here}</p>",
+			"    	<small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 File Input Horizontal"
+	},
+	"Bootstrap 4 Form": {
+		"prefix": "bf-form",
+		"body": [
+			"<form method=\"${1:POST}\" name=\"${2:inputname}\" id=\"${2:inputname}\" action=\"${3:routeName}\" class=\"${4:form-horizontal}\">",
+			"	 @csrf",
+			"    ${0:bf-text}",
+			"",
+			"    <div class=\"btn-group float-right\">",
+			"        ${8:<button type=\"reset\" class=\"btn btn-warning\">Reset</button>}",
+			"        <button type=\"submit\" class=\"btn btn-${7:success}\">${6:Add}</button>",
+			"    </div>",
+			"",
+			"</form>"
+		],
+		"description": "Bootstrap 4 Form"
+	},
+	"Bootstrap 4 Form Model": {
+		"prefix": "bf-formmodel",
+		"body": [
+			"<form method=\"${1:PUT}\" name=\"${2:inputname}\" id=\"${2:inputname}\"  action=\"${3:routeName}\" class=\"${4:form-horizontal}\">",
+			"",
+			"    ${0:bf-text}",
+			"",
+			"    <div class=\"btn-group float-right\">",
+			"        ${7:<button type=\"reset\" class=\"btn btn-warning\">Reset</button>}",
+			"        <button type=\"submit\" class=\"btn btn-${5:success}\">${6:Add}</button>",
+			"    </div>",
+			"",
+			"</form>"
+		],
+		"description": "Bootstrap 4 Form Model"
+	},
+	"Bootstrap 4 Hidden Input": {
+		"prefix": "bf-hidden",
+		"body": [
+			"<input type=\"hidden\" name=\"${1:inputname}\" value=\"${2:value}\" id=\"${1:inputname}\">"
+		],
+		"description": "Bootstrap 4 Hidden Input"
+	},
+    "Bootstrap 4 Number Input": {
+        "prefix": "bf-number",
+        "body": [
+            "<div class=\"form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+            "    <label for=\"${1:inputname}\">${2:Input label}</label>",
+            "    <input type=\"number\" id=\"${1:inputname}\" value=\"{{ old('${1:inputname}') }}\" name=\"${1:inputname}\" class=\"form-control\" ${4:required=\"required\"} placeholder=\"${3:Placeholder}\">",
+            "    <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+            "</div>"
+        ],
+        "description": "Bootstrap 4 Number Input with Laravel error handling"
+    },
+	"Bootstrap 4 Horizontal Number Input": {
+        "prefix": "bf-numberh",
+        "body": [
+            "<div class=\"row form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+            "    <label for=\"${1:inputname}\" class=\"${5:col-sm-3 control-label}\">${2:Input label}</label>",
+            "    <div class=\"${6:col-sm-9}\">",
+            "        <input type=\"number\" id=\"${1:inputname}\" value=\"{{ old('${1:inputname}') }}\"  name=\"${1:inputname}\" class=\"form-control\" ${4:required=\"required\"} placeholder=\"${3:Placeholder}\">",
+            "        <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 4 Horizontal Number Input with Laravel error handling"
+    },
+	"Bootstrap 4 Password Input": {
+        "prefix": "bf-password",
+        "body": [
+            "<div class=\"form-group {{ \\$errors->has('${1:password}') ? 'has-error' : '' }}\">",
+            "    <label for=\"${1:password}\">${2:Password}</label>",
+            "    <input type=\"password\" id=\"${1:password}\" name=\"${1:password}\" class=\"form-control\" ${3:required=\"required\"}>",
+            "    <small class=\"text-danger\">{{ \\$errors->first('${1:password}') }}</small>",
+            "</div>"
+        ],
+        "description": "Bootstrap 4 Password Input"
+    },
+    "Bootstrap 4 Horizontal Password Input": {
+        "prefix": "bf-passwordh",
+        "body": [
+            "<div class=\"row form-group {{ \\$errors->has('${1:password}') ? 'has-error' : '' }}\">",
+            "    <label for=\"${1:password}\" class=\"${4:col-sm-3 control-label}\">${2:Password}</label>",
+            "    <div class=\"${5:col-sm-9}\">",
+            "        <input type=\"password\" id=\"${1:password}\" name=\"${1:password}\" class=\"form-control\" ${3:required=\"required\"}>",
+            "        <small class=\"text-danger\">{{ \\$errors->first('${1:password}') }}</small>",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap 4 Horizontal Password Input"
+    },
+	"Bootstrap 4 Radio Input": {
+		"prefix": "bf-radio",
+		"body": [
+			"<div class=\"form-check {{ \\$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}\">",
+			"    <input class=\"form-check-input\" type=\"radio\" name=\"${1:radio_group_name}\" id=\"${4:radio_id}\" value=\"${2:value}\">",
+			"    <label class=\"form-check-label\" for=\"${4:radio_id}\">${5:Radio label}</label>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:radio_group_name}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Radio Input"
+	},
+	"Bootstrap 4 Horizontal Radio Input": {
+		"prefix": "bf-radioh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:radio_group_name}') ? ' has-error' : '' }}\">",
+			"    <div class=\"${6:col-sm-offset-3 col-sm-9}\">",
+			"        <div class=\"form-check\">",
+			"            <input class=\"form-check-input\" type=\"radio\" name=\"${1:radio_group_name}\" id=\"${4:radio_id}\" value=\"${3:value}\">",
+			"            <label class=\"form-check-label\" for=\"${4:radio_id}\">${5:Radio label}</label>",
+			"        </div>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:radio_group_name}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Radio Input"
+	},
+	"Bootstrap 4 Select Input": {
+		"prefix": "bf-select",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\">${2:Input label}</label>",
+			"    <select id=\"${1:inputname}\" name=\"${1:inputname}\" class=\"form-control\" ${5:required} ${6:multiple}>",
+			"        ${0:<option value=\"\">Select ${2:Input label}</option>}",
+			"    </select>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Select Input"
+	},
+	"Bootstrap 4 Horizontal Select Input": {
+		"prefix": "bf-selecth",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\" class=\"${7:col-sm-3 control-label}\">${2:Input label}</label>",
+			"    <div class=\"${8:col-sm-9}\">",
+			"        <select id=\"${1:inputname}\" name=\"${1:inputname}\" class=\"form-control\" ${5:required} ${6:multiple}>",
+			"        	${0:<option value=\"\">Select ${2:Input label}</option>}",
+			"        </select>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Select Input"
+	},
+	"Bootstrap 4 Select Month": {
+		"prefix": "bf-selectmonth",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:month}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:month}\" class=\"${4:col-sm-3 control-label}\">${2:Month}</label>",
+			"    <div class=\"${5:col-sm-9}\">",
+			"        <select id=\"${1:month}\" name=\"${1:month}\" class=\"form-control\" ${3:required=\"required\"}>",
+			"            <!-- Month Options -->",
+			"        </select>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:month}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Select Month"
+	},
+	"Bootstrap 4 Select Range": {
+		"prefix": "bf-selectrange",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:range}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:range}\">${2:Input label}</label>",
+			"    <select id=\"${1:range}\" name=\"${1:range}\" class=\"form-control\" ${5:required=\"required\"}>",
+			"        <!-- Range Options -->",
+			"    </select>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:range}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Select Range"
+	},
+	"Bootstrap 4 Horizontal Select Range": {
+		"prefix": "bf-selectrangeh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:range}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:range}\" class=\"${6:col-sm-3 control-label}\">${2:Range}</label>",
+			"    <div class=\"${7:col-sm-9}\">",
+			"        <select id=\"${1:range}\" name=\"${1:range}\" class=\"form-control\" ${5:required=\"required\"}>",
+			"            <!-- Range Options -->",
+			"        </select>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:range}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Select Range"
+	},
+	"Bootstrap 4 Select Year": {
+		"prefix": "bf-selectyear",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:year}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:year}\">${2:Year}</label>",
+			"    <select id=\"${1:year}\" name=\"${1:year}\" class=\"form-control\" ${5:required=\"required\"}>",
+			"        <!-- Year Options -->",
+			"    </select>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:year}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Select Year"
+	},
+	"Bootstrap 4 Horizontal Select Year": {
+		"prefix": "bf-selectyearh",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:year}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:year}\" class=\"${6:col-sm-3 control-label}\">${2:Year}</label>",
+			"    <div class=\"${7:col-sm-9}\">",
+			"        <select id=\"${1:year}\" name=\"${1:year}\" class=\"form-control\" ${5:required=\"required\"}>",
+			"            <!-- Year Options -->",
+			"        </select>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:year}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Select Year"
+	},
+	"Bootstrap 4 Text Input": {
+		"prefix": "bf-text",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\">${2:Input label}</label>",
+			"    <input type=\"text\" id=\"${1:inputname}\" name=\"${1:inputname}\" value=\"{{ old('${1:inputname}') }}\"  class=\"form-control\" ${4:required=\"required\"} placeholder=\"${3:Placeholder}\">",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Text Input"
+	},
+	"Bootstrap 4 Textarea Input": {
+		"prefix": "bf-textarea",
+		"body": [
+			"<div class=\"form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\">${2:Input label}</label>",
+			"    <textarea id=\"${1:inputname}\" name=\"${1:inputname}\" class=\"form-control\" ${4:required=\"required\"}>${3:Your text here...}{{ old('${1:inputname}') }} </textarea>",
+			"    <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Textarea Input"
+	},
+	"Bootstrap 4 Horizontal Textarea Input": {
+		"prefix": "bf-textareah",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\" class=\"${5:col-sm-3 control-label}\">${2:Input}</label>",
+			"    <div class=\"${6:col-sm-9}\">",
+			"        <textarea id=\"${1:inputname}\" name=\"${1:inputname}\" class=\"form-control\" ${4:required=\"required\"}>${3:Your text here...} {{ old('${1:inputname}') }}</textarea>",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Textarea Input"
+	},
+	"Bootstrap 4 Horizontal Text Input": {
+		"prefix": "bf-texth",
+		"body": [
+			"<div class=\"row form-group {{ \\$errors->has('${1:inputname}') ? 'has-error' : '' }}\">",
+			"    <label for=\"${1:inputname}\" class=\"${5:col-sm-3 control-label}\">${2:Input}</label>",
+			"    <div class=\"${6:col-sm-9}\">",
+			"        <input type=\"text\" id=\"${1:inputname}\" value=\"{{ old('${1:inputname}') }}\" name=\"${1:inputname}\" class=\"form-control\" ${4:required=\"required\"} placeholder=\"${3:Placeholder}\">",
+			"        <small class=\"text-danger\">{{ \\$errors->first('${1:inputname}') }}</small>",
+			"    </div>",
+			"</div>"
+		],
+		"description": "Bootstrap 4 Horizontal Text Input"
+	}
+
+}

@@ -18,6 +18,10 @@ Route::get('/table', function () {
     return view('table');
 })->name('table');
 
+Route::get('/form', function () {
+    return view('form');
+})->name('form');
+
 Route::get('/quotations', function () {
     return view('quotations');
 });
