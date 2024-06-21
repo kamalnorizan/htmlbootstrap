@@ -64,7 +64,8 @@
                     <div class="row form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         <label for="name" class="col-sm-3 control-label">Nama</label>
                         <div class="col-sm-9">
-                            <input type="text" id="name" value="{{ old('name') }}" name="name" class="form-control" required="required" placeholder="Sila isi nama penuh anda">
+                            <input type="text" id="name" value="{{ old('name') }}" name="name"
+                                class="form-control" required="required" placeholder="Sila isi nama penuh anda">
                             <small class="text-danger">{{ $errors->first('name') }}</small>
                         </div>
                     </div>
@@ -73,8 +74,9 @@
                             <div class="row form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                                 <label for="email" class="col-sm-3 control-label">Email address</label>
                                 <div class="col-sm-9">
-                                    <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control" required placeholder="eg: foo@bar.com">
-                                <small class="text-danger">{{ $errors->first('email') }}</small>
+                                    <input type="email" id="email" name="email" value="{{ old('email') }}"
+                                        class="form-control" required placeholder="eg: foo@bar.com">
+                                    <small class="text-danger">{{ $errors->first('email') }}</small>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +84,8 @@
                             <div class="row form-group {{ $errors->has('phoneNumber') ? 'has-error' : '' }}">
                                 <label for="phoneNumber" class="col-sm-3 control-label">No Telefon</label>
                                 <div class="col-sm-9">
-                                    <input type="text" id="phoneNumber" value="{{ old('phoneNumber') }}" name="phoneNumber" class="form-control" required="required" placeholder="">
+                                    <input type="text" id="phoneNumber" value="{{ old('phoneNumber') }}"
+                                        name="phoneNumber" class="form-control" required="required" placeholder="">
                                     <small class="text-danger">{{ $errors->first('phoneNumber') }}</small>
                                 </div>
                             </div>
@@ -98,37 +101,36 @@
 @endsection
 
 @section('script')
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#btnSubmit').click(function(e) {
+            e.preventDefault();
+            $.ajax({
+                type: "POST",
+                url: "{{ route('form.store') }}",
+                data: {
+                    _token: '{{ csrf_token() }}',
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    phoneNumber: $('#phoneNumber').val()
+                },
+                dataType: "json",
+                success: function(response) {
 
-    $('#btnSubmit').click(function (e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "{{ route('form.store') }}",
-            data: {
-                _token: '{{ csrf_token() }}',
-                name: $('#name').val(),
-                email: $('#email').val(),
-                phoneNumber: $('#phoneNumber').val()
-            },
-            dataType: "json",
-            success: function (response) {
-
-            },
-            error: function (xhr, ajaxOptions, thrownError) {
-                // console.log(xhr.responseJSON);
-                var errors = xhr.responseJSON.errors;
-                console.log(errors);
-                $.each(errors, function (indexInArray, error) {
-                    $('#'+indexInArray).addClass('is-invalid');
-                    $('#'+indexInArray).parent().find('.text-danger').text(error[0]);
-                });
-            }
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    // console.log(xhr.responseJSON);
+                    var errors = xhr.responseJSON.errors;
+                    console.log(errors);
+                    $.each(errors, function(indexInArray, error) {
+                        $('#' + indexInArray).addClass('is-invalid');
+                        $('#' + indexInArray).parent().find('.text-danger').text(error[0]);
+                    });
+                }
+            });
         });
-    });
-
-</script>
+    </script>
 @endsection
