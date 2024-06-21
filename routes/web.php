@@ -14,6 +14,10 @@ Route::get('/flex', function () {
     return view('flex');
 })->name('flex');
 
+Route::get('/table', function () {
+    return view('table');
+})->name('table');
+
 Route::get('/quotations', function () {
     return view('quotations');
 });
